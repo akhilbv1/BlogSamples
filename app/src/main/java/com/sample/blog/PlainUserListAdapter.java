@@ -1,9 +1,10 @@
+/*
 package com.sample.blog;
 
-import android.support.annotation.NonNull;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.RecyclerView;
-import android.text.TextUtils;
+import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,9 +18,11 @@ import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.subjects.PublishSubject;
 
+*/
 /*
  * Created by akhil on 8/11/18.
- */
+ *//*
+
 
 public class PlainUserListAdapter extends RecyclerView.Adapter<PlainUserListAdapter.ViewHolder> {
 
@@ -99,21 +102,26 @@ public class PlainUserListAdapter extends RecyclerView.Adapter<PlainUserListAdap
 
         @Override
         public void onClick(View view) {
-         /*   if (!TextUtils.isEmpty(sampleUserDetailsPojo.getUsername()))
+         */
+/*   if (!TextUtils.isEmpty(sampleUserDetailsPojo.getUsername()))
             {
                 userDetailsPubSub.onNext(Notification.createOnNext(sampleUserDetailsPojo.getUsername()));
             }
             else {
                 userDetailsPubSub.onError(new Throwable("Value is Null",new NullPointerException()));
-            }*/
+            }*//*
+
+*/
 /*
          try {
              userDetailsPubSub.onNext(Notification.createOnNext(sampleUserDetailsPojo.getUsername()));
          }catch (Exception e)
          {
-             userDetailsPubSub.tryib
-         }*/
-            /*usersDetailsObservable = Observable.create(new ObservableOnSubscribe<String>() {
+
+         }*//*
+
+            */
+/*usersDetailsObservable = Observable.create(new ObservableOnSubscribe<String>() {
                 @Override
                 public void subscribe(ObservableEmitter<String> emitter) {
                     try {
@@ -122,8 +130,10 @@ public class PlainUserListAdapter extends RecyclerView.Adapter<PlainUserListAdap
                         emitter.onError(e);
                     }
                 }
-            });*/
+            });*//*
+
             // listener.onClickUserListItem(sampleUserDetailsPojo.getUsername());
         }
     }
 }
+*/

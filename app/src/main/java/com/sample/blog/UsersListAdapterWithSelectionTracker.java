@@ -1,9 +1,10 @@
+/*
 package com.sample.blog;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -12,19 +13,15 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import androidx.recyclerview.selection.ItemDetailsLookup;
-import androidx.recyclerview.selection.ItemKeyProvider;
-import androidx.recyclerview.selection.SelectionTracker;
-
+*/
 /*
  * Created by akhil on 25/10/18.
- */
+ *//*
+
 
 public class UsersListAdapterWithSelectionTracker extends RecyclerView.Adapter<UsersListAdapterWithSelectionTracker.ViewHolder> {
 
     private List<SampleUserDetailsPojo> usersList;
-
-    private SelectionTracker<Long> selectionTracker;
 
     private onClickUserItemClickListener listener;
 
@@ -188,3 +185,4 @@ public class UsersListAdapterWithSelectionTracker extends RecyclerView.Adapter<U
          }
      }
 }
+*/

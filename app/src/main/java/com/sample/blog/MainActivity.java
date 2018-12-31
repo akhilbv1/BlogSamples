@@ -1,10 +1,11 @@
+/*
 package com.sample.blog;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -21,9 +22,11 @@ import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 import retrofit2.Response;
 
+*/
 /*
  * Created by akhil on 23/10/18.
- */
+ *//*
+
 
 public class MainActivity extends AppCompatActivity implements PlainUserListAdapter.onClickUserItemClickListener {
 
@@ -126,14 +129,16 @@ public class MainActivity extends AppCompatActivity implements PlainUserListAdap
                                 });
 
 
-                       /* selectionTracker = new SelectionTracker.Builder<>("my_selection",
+                       */
+/* selectionTracker = new SelectionTracker.Builder<>("my_selection",
                                 recUsers,
                                 new UsersListAdapterWithSelectionTracker.KeyProvider(recUsers.getAdapter()),
                                 new UsersListAdapterWithSelectionTracker.DetailsLookup(recUsers),
                                 StorageStrategy.createLongStorage())
                                 .withSelectionPredicate(new UsersListAdapterWithSelectionTracker.Predicate())
                                 .build();
-                        usersListAdapter.setSelectionTracker(selectionTracker);*/
+                        usersListAdapter.setSelectionTracker(selectionTracker);*//*
+
 
 
                     }
@@ -157,3 +162,4 @@ public class MainActivity extends AppCompatActivity implements PlainUserListAdap
         Toast.makeText(this, username, Toast.LENGTH_SHORT).show();
     }
 }
+*/
