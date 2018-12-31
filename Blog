@@ -1,0 +1,80 @@
+So,After google made kotlin offical language for android development,It became talk of the town for all android dev's.It has been around for a while but only a few have tried or were developing projects with it.So,After started devlopment with kotlin,The one word that has came into my mind is AWESOME!!.I am not exaggerating because you will also feel the same way at the end of this article.
+
+So,My post today will be more theoretical and hope i don't bore you away.
+
+So,The reason kotlin has became so popular and many are loving it is because of the features and tools it provides.With them we can write a more precise clean code.
+
+I am planning to write a series of articles about how to actually use the power of kotlin in our Day-to-Day Android development and how to write clean code with it.I will start with Collections and i will focus on Lists because i can most certainly assure or say that we can't develop android apps with out using Lists because it justs fits to maximum of our purposes.
+So,While learning kotlin,What i observed is there all many opearations that we can perform on lists and it really makes our lives more easier and most importantly we can really write a more precise and clean code.
+The reason why i am focusing or insisting on writing clean code is because it is what distinguishes a more matured developer from a novice devloper.
+Well with google almost everyone who understands english can learn and write code but only a few can write clean.It is what makes us more matured and more experienced developer.
+"Every one can write code,But only few can write clean code."
+So,sorry i got away...Now coming back to kotlin lists i will explain the list of operations that can performed and in what scenario we can use because there is no point in learning if we dont know when and where to use them.
+
+So basically not only lists these operations can be performed ony collections in kotlin and as i mentioned i am concentrating more on Lists.
+Operations:-
+lets take a sample list of numbers:-
+val numbers = listOf(-1, 0, 2)
+
+``any``
+Returns true if at least one element matches the given predicate.   
+   ``numbers.any { it == 2 }``
+It returns true because list has element 2.
+So any is usefull where we want to find out ateast one single element in our list matches to our given predicate and our condition.
+
+``all``
+Returns true if all the elements match the given predicate.
+`` numbers.all { it > 0}``
+It returns false because all the elements are not >0.So,all is really usefull to check list or to control the limit of each individual values of elements.It can be used in many scenarios if we think right.
+
+count
+Returns the number of elements matching the given predicate.
+ numbers.count { it >= 0}
+If we want to determine how many elements in a list matched our given predicate.
+
+none
+Returns true if no elements match the given predicate.
+
+
+So with all and any we can determine whether a single or all elements matches or predicate but,In some cases we need to know how many elements matches our given predicate.For example from our list of users we need to find out how many users has filled up their profile details and how many did not.
+
+So with the above three operations we can decide if all the elements matches our predicated and if not atleast one matches and if yes than how many exactly has satified our condition.
+
+for(obj in kotlin_list)
+Used to loop each elements of a list.This is similar to forEach loop in java
+
+
+forEach
+Performs the given operation to each element.
+  Log.i("list", "" +numbers.forEach{
+            if(it>0)
+            {
+                Log.i("lists", "for_each:- $it")
+            }
+        })
+Now,while looping if we have perform a certain operation on each element or to check for a condition.
+
+forEachIndexed
+Same as forEach, though we also get the index of the element.
+As said above is same as forEach but we event get the index of element.
+
+So,With above three operations we can loop over a list more efficiently.
+
+Filtering operations:-
+drop
+Returns a list containing all elements except first n elements.
+As it states it returns the list except the number of elements i.e if we give n==4 than it will return a list except the first 4 elements.
+
+dropWhile
+Returns a list containing all elements except first elements that satisfy the given predicate.
+
+
+dropLastWhile
+Returns a list containing all elements except last elements that satisfy the given predicate.
+
+dropWhile,dropLastWhile are a bit confusing but you can understand it if you spend a little bit of time with them.
+
+
+
+
+
